@@ -1,2 +1,6 @@
 fr:
-  title: Osuny template
+  title: noesya
+  contentDir: content/fr
+  languageCode: fr
+  languageName: Français
+
