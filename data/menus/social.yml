@@ -1,6 +1,6 @@
 ---
 - title: Twitter
-  target: https://twitter.com/noesya_coop/
+  target: https://twitter.com/noesya_coop
   kind: url
   children: []
 - title: LinkedIn
@@ -8,7 +8,7 @@
   kind: url
   children: []
 - title: contact@noesya.coop
-  target: 'mailto: contact@noesya.coop/'
+  target: 'mailto: contact@noesya.coop'
   kind: url
   children: []
 
