@@ -1,4 +1,8 @@
 ---
 title: Primary
-items: []
+items:
+- title: Revue de presse
+  target: "/revue-de-presse/"
+  kind: page
+  children: []
 
