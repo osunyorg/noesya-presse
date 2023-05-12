@@ -1,0 +1,25 @@
+websites:
+  - domain: www
+    title: site
+  - domain: gouvernance
+    title: gouvernance
+  - domain: diagnostic
+    title: diagnostic
+  - domain: lab
+    title: lab
+  - domain: reseau
+    title: réseau
+  - domain: works
+    title: works
+  - domain: sane
+    title: sane
+    pending: true
+  - domain: histoires
+    title: histoires
+    pending: true
+  - domain: stack
+    title: stack
+    pending: true
+  - domain: methode
+    title: méthode
+    pending: true

@@ -1,0 +1,50 @@
+<div class="container">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+    <p itemprop="name">noesya Paris</p>
+    <span itemprop="streetAddress">15 rue Hélène</span><br>
+    <span itemprop="postalCode">75017</span>&nbsp;
+    <span itemprop="addressLocality">Paris</span><br>
+    <span>France</span> 
+  </address>
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+    <p itemprop="name">noesya Bordeaux</p>
+    <span itemprop="streetAddress">2 rue Louis Combes</span><br>
+    <span itemprop="postalCode">33000</span>&nbsp;
+    <span itemprop="addressLocality">Bordeaux</span><br>
+    <span>France</span> 
+  </address>
+  <nav aria-label="Navigation dans l'écosystème" class="ecosystem">
+    <ul>
+      {{ range site.Data.ecosystem.websites }}
+        <li>
+          {{ if eq .domain site.Params.ecosystem }}
+            {{ .title }}
+          {{ else if .pending }}
+            <span title="Ce site sera disponible bientôt..." aria-hidden="true">{{ .title }}</span>
+          {{ else }}
+            <a href="https://{{ .domain }}.noesya.coop">{{ .title }}</a>
+          {{ end }}
+        </li>
+      {{ end }}
+    </ul>
+  </nav>
+  <div class="footer-logo">
+    <a href="https://bcorporation.net/certification/all-pending-b-corps" target="_blank" rel="noreferrer"><img src="/assets/images/logos/logo-bcorp-pending.svg" alt="Certified B-Corporation Pending" width="66" height="120"> </a>
+    <img src="/assets/images/chouette/small.png" alt="">
+  </div>
+</div>
+<div class="container">
+  <div class="footer-legals">
+    <ul class="nav-legal nav-level-1">
+      <li><a href="https://www.noesya.coop/mentions-legales/" target="_blank" rel="noreferrer" title="Mentions légales - lien externe">Mentions légales</a></li>
+      <li><a href="https://www.noesya.coop/politique-de-sobriete" target="_blank" rel="noreferrer" title="Politique de sobriété - lien externe">Politique de sobriété</a></li>
+    </ul>
+  </div>
+  <div class="footer-social">
+    <ul class="nav-social nav-level-1">
+      <li><a href="https://twitter.com/noesya_coop" target="_blank" rel="noreferrer" title="Twitter - lien externe">Twitter</a></li>
+      <li><a href="https://www.linkedin.com/company/noesyacoop" target="_blank" rel="noreferrer" title="Linkedin - lien externe">LinkedIn</a></li>
+      <li><a href="mailto:contact@noesya.coop">contact@noesya.coop</a></li>
+    </ul>
+  </div>
+</div>
