@@ -132,7 +132,8 @@ header#document-header
                     transition: color .3s ease
                     @include media-breakpoint-up(md)
                         @include h1
-                &:hover a
+                &:hover a,
+                &:focus-within a
                     color: transparentize($color-accent, .35)
             @include media-breakpoint-up(desktop)
                 padding-top: 253px
@@ -183,11 +184,11 @@ footer#document-footer
     .container
         position: relative
     ul li a
-        color: transparentize(#FFFFFF, .2)
+        color: transparentize(white, .2)
         text-decoration: none
         transition: color .3s ease
         &:hover
-            color: transparentize(#FFFFFF, 0)
+            color: transparentize(white, 0)
             text-decoration: none
     .footer-social li,
     .footer-legals li
@@ -200,7 +201,7 @@ footer#document-footer
         line-height: px2rem(36)
         text-decoration: none
     nav li span
-            color: transparentize(white, .55)
+            color: transparentize(white, .8)
     .footer-logo
         align-items: flex-end
         display: flex
@@ -307,7 +308,6 @@ footer#document-footer
     @include media-breakpoint-down(md)
         .footer-logo > img
             width: col(4.4)
-                    
 // Blocks
 .block-testimonials
     .signature + .meta
@@ -397,6 +397,10 @@ footer#document-footer
         .categories__term .posts--list .post a
             @include link(white)
             transition: color .3s ease
+.posts-navigation ul a
+    transition: color .2s ease
+    &:hover
+        color: $color-text-alt
 
 // Dark mode
 @media (prefers-color-scheme: dark)
@@ -435,14 +439,33 @@ footer#document-footer
             &:hover
                 color: transparentize(black, 0)
         nav li span
-                color: transparentize(black, .45)
+                color: transparentize(black, .6)
     .post-meta time,
-    .block-testimonials .signature + .meta
-        color: $color-text-alt-dark
+    .block-testimonials .signature + .meta,
+    .post-sidebar .post-infos li > span,
+    .post-sidebar .toc-title,
+    .toc-container .toc-title,
+    .posts-navigation ul a:hover,
+    .toc ol .active
+        @include in-page-with-or-without-sidebar
+            color: $color-text-alt-dark
     .avatar
         background-color: black
-    ol.persons--list > li:hover
+    ol.persons--list > li:hover,
+    .post-sidebar .post-infos li a,
+    .post-sidebar .toc-content a,
+    .toc ol li a
         color: white
+    .block-files .files li
+        &::before
+            border-color: $color-text-alt-dark
+        &:hover::before
+            background-color: $color-text-alt-dark
+            color: black
+    .block-chapter--alt_background .chapter
+        @include in-page-with-sidebar
+            background: $color-background-alt-dark
+            color: white
     .has-menu-opened
         main
             background: white
@@ -463,7 +486,30 @@ footer#document-footer
             .menu
                 li a
                     color: white
-                ul:hover a
+                ul:hover a,
+                ul:focus-within a
                     color: transparentize(white, .35)
-                li a:hover
+                li a:hover,
+                li a:focus
                     color: white
+
+
+// Dark/light mode for partners and organizations blocks
+@media (prefers-color-scheme: light)
+    .organizations .organization .media,
+    .organizations__page .document-content .logo
+        picture
+            &:last-child
+                display: none
+            &:first-child
+                display: block
+@media (prefers-color-scheme: dark)
+    .organizations .organization .media,
+    .organizations__page .document-content .logo
+        background: $color-text-alt
+        picture
+            background: $color-text-alt
+            &:first-child
+                display: none
+            &:last-child
+                display: block
