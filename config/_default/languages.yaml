@@ -5,3 +5,5 @@ fr:
   contentDir: content/fr
   languageCode: fr
   languageName: Français
+  permalinks:
+    posts: /revue-de-presse/:year-:month-:day-:slug/
