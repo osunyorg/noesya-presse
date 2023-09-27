@@ -2,8 +2,3 @@ theme: noesya-hugo-theme
 paginate: 18
 enableRobotsTXT: true
 removePathAccents: true
-
-deployment:
-  targets:
-    - name: "production"
-      URL: "s3://b96ce1f4e9eac600a491a02bc2a8d7cf64f54684d6952a981a379749e5d96cc9?endpoint=garage.deuxfleurs.fr&s3ForcePathStyle=true&region=garage"
