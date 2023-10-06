@@ -7,13 +7,6 @@
   "dependencies": {
     "osuny-hugo-theme": "./themes/osuny-hugo-theme-aaa"
   },
-  "devDependencies": {
-    "autoprefixer": "^10.4.2",
-    "cssnano": "^5.0.15",
-    "postcss": "^8.4.14",
-    "postcss-cli": "^9.1.0",
-    "postcss-sass": "^0.5.0"
-  },
   "scripts": {
     "dev": "hugo server",
     "build": "hugo --minify",
