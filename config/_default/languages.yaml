@@ -5,6 +5,8 @@ fr:
   contentDir: content/fr
   languageCode: fr
   languageName: Français
+  params:
+    social:
   permalinks:
     posts: /revue-de-presse/:year-:month-:day-:slug/
   taxonomies:
