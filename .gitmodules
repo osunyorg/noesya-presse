@@ -1,6 +1,3 @@
 [submodule "themes/osuny-hugo-theme-aaa"]
 	path = themes/osuny-hugo-theme-aaa
-	url = git@github.com:noesya/osuny-hugo-theme-aaa.git
-[submodule "noesya-hugo-theme"]
-	path = noesya-hugo-theme
-	url = https://github.com/noesya/noesya-hugo-theme.git
+	url = https://github.com/noesya/osuny-hugo-theme-aaa.git
