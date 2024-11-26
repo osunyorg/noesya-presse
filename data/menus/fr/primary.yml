@@ -5,4 +5,5 @@ items:
   target: "/revue-de-presse/"
   kind: page
   children: []
+  file: content/fr/posts/_index.html
 
