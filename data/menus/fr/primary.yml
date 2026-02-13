@@ -2,10 +2,12 @@
 title: Primary
 items:
 - title: Revue de presse
+  slug: revue-de-presse
   target: "/revue-de-presse/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/posts"
   file: content/fr/posts/_index.html
 
