@@ -13,16 +13,3 @@ Cache-Control = "max-age=31536000, no-transform, public"
 for = ["**/*.png", "**/*.jpg", "**/*.jpeg", "**/*.gif", "**/*.webp"]
 [headers.values]
 Cache-Control = "max-age=31536000, no-transform, public"
-
-[[redirects]]
-from = "/actualites/2023-03-13-soutenir-le-numerique-social-et-solidaire-le-trou-dans-la-raquette-quil-faut-combler-avant-2030/"
-to = "/revue-de-presse/2022-11-29-soutenir-le-numerique-social-et-solidaire-le-trou-dans-la-raquette-quil-faut-combler-avant-2030/"
-
-[[redirects]]
-from = "/actualites/"
-to = "/revue-de-presse/"
-
-[[redirects]]
-from = "/revue-de-presse/2023-03-13-soutenir-le-numerique-social-et-solidaire-le-trou-dans-la-raquette-quil-faut-combler-avant-2030/"
-to = "/revue-de-presse/2022-11-29-soutenir-le-numerique-social-et-solidaire-le-trou-dans-la-raquette-quil-faut-combler-avant-2030/"
-
