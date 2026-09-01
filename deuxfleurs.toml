@@ -23,6 +23,10 @@ from = "/actualites/index.html"
 to = "/revue-de-presse/"
 
 [[redirects]]
+from = "/fichiers/2026/index.html"
+to = "/fichiers/2026/soutenir-le-numerique-social-et-solidaire-le-trou-dans-la-raquette-qu-il-faut-combler-avant-2030---s/"
+
+[[redirects]]
 from = "/revue-de-presse/2023-03-13-soutenir-le-numerique-social-et-solidaire-le-trou-dans-la-raquette-quil-faut-combler-avant-2030/index.html"
 to = "/revue-de-presse/2022-11-29-soutenir-le-numerique-social-et-solidaire-le-trou-dans-la-raquette-quil-faut-combler-avant-2030/"
 
